@@ -4,7 +4,8 @@ import {ActivatedRoute,Router, ParamMap } from '@angular/router';
 @Component({
   selector: 'app-departmentdetail',
   template: `<h1>You have selected id = {{departmentId}}</h1>
-  <button(click)="goprevious()">Previous</button>
+  <button (click)="goprevious()">Previous</button>
+  &nbsp;
   <button (click)="gonext()">Next</button>`,
   styleUrls: ['./departmentdetail.component.css']
 })

@@ -10,7 +10,7 @@ import {Router} from '@angular/router'
   </ul>
   <ul>
   <li (click)="onSelect(department)" *ngFor = "let department of departments">
-  <span> {{department.id}}</span>{{department.name}}
+  <button> {{department.id}}--{{department.name}}</button>
   </ul>`,
   styleUrls: ['./departments.component.css']
 })
