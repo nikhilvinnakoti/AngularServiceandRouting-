@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, convertToParamMap} from '@angular/router';
-import {Router} from '@angular/router';
+import {ActivatedRoute,Router } from '@angular/router';
 
 @Component({
   selector: 'app-departmentdetail',
   template: `<h1>You have selected id = {{departmentId}}</h1>
-  <a (click)="goprevious()">Previous</a>
-  <a (click)="gonext()">Next</a>`,
+  <button(click)="goprevious()">Previous</button>
+  <button (click)="gonext()">Next</button>`,
   styleUrls: ['./departmentdetail.component.css']
 })
 export class DepartmentdetailComponent implements OnInit {
